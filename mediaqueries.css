@@ -6,6 +6,10 @@
   .about-containers {
     flex-wrap: wrap;
   }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -15,7 +19,7 @@
   #hamburger-nav {
     display: flex;
   }
-  #experiense,
+  #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
@@ -84,7 +88,7 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vh;
+    height: 46vw;
     justify-content: center;
   }
   .section__text__p2 {

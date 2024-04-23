@@ -9,13 +9,23 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Sato</div>
+      <div class="logo">Alexey Stashatov</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contact">Контактные данные</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color theme icon"
+            />
+          </li>
         </ul>
       </div>
     </nav>
@@ -32,6 +42,16 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color theme icon"
+            />
+          </li>
         </div>
       </div>
     </nav>
@@ -54,22 +74,26 @@
           >
             Резюме
           </button>
-          <button class="btn btn-color-1" onClick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin-light.png"
+            src-dark="./assets/linkedin-dark.png"
             alt="LinkedIn profile"
-            class="icon"
+            class="icon linkedin-icon"
             onClick="window.open('https://www.linkedin.com', '_blank')"
           />
           <img
-            src="./assets/github.png"
-            alt="Github profile"
-            class="icon"
-            onClick="window.open('https://github.com/Alex008145', '_blank')"
+            src="./assets/github_light.png"
+            src-light="./assets/github-light.png"
+            src-dark="./assets/github-dark.png"
+            alt="github profile"
+            class="icon github-icon"
+            onClick="window.open('https://www.github.com', '_blank')"
           />
         </div>
       </div>
@@ -121,7 +145,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onClick="location.href='#experience'"
+        onclick="location.href='./#experience'"
       />
     </section>
     <section id="experience">
@@ -245,7 +269,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onClick="location.href='#projects'"
+        onclick="location.href='./#projects'"
       />
     </section>
     <section id="projects">
@@ -265,13 +289,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onClick="window.open('https://github.com', '_blank')"
+                onclick="window.open('https://github.com', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onClick="window.open('https://github.com', '_blank')"
+                onclick="window.open('https://github.com', '_blank')"
               >
                 Live Demo
               </button>
@@ -289,7 +313,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onClick="window.open('https://github.com', '_blank')"
+                onclick="window.open('https://github.com', '_blank')"
               >
                 Github
               </button>
@@ -334,7 +358,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onClick="location.href='#contact'"
+        onClick="location.href='./#contact'"
       />
     </section>
     <section id="contact">
@@ -351,9 +375,12 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin-light.png"
+            src-dark="./assets/linkedin-dark.png"
+            alt="LinkedIn profile"
+            class="icon linkedin-icon"
+            onClick="window.open('https://www.linkedin.com', '_blank')"
           />
           <p><a href="https://www.linkedin.com">linkedin</a></p>
         </div>
